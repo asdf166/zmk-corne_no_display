@@ -20,11 +20,14 @@
 
 / {
     behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD0";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        space_cardet: space_cardet {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_CARDET";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
         };
     };
 
@@ -41,10 +44,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LEFT_WIN ESC  &kp Q  &kp W  &kp E     &kp R  &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&mo 1             &kp A  &kp S  &kp D     &kp F  &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&td0              &kp Z  &kp X  &kp C     &kp V  &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                                &kp LGUI  &mo 1  &lt 3 SPACE    &lt 3 ENTER  &mo 2  &kp RALT
+&mt LEFT_WIN ESC         &kp Q                          &kp W  &kp E         &kp R        &kp T            &kp Y  &kp U      &kp I     &kp O      &kp P                           &kp SEMI
+&mo 1                    &kp A                          &kp S  &kp D         &kp F        &kp G            &kp H  &kp J      &kp K     &kp L      &space_cardet RIGHT_SHIFT RPAR  &kp SQT
+&space_cardet LCTRL TAB  &space_cardet LEFT_SHIFT LPAR  &kp Z  &kp X         &kp C        &kp V            &kp B  &kp N      &kp M     &kp COMMA  &kp PERIOD                      &kp SLASH
+                                                               &kp LEFT_ALT  &lt 2 ENTER  &kp BACKSPACE    &mo 3  &kt SPACE  &kp RALT
             >;
         };
 
