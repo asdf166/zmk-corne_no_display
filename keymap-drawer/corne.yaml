@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - {t: ;, s: ':'}
-  - NUMBER
+  - special
   - A
   - S
   - D
@@ -43,48 +43,48 @@ layers:
   - Fn
   - {t: '$$mdi:keyboard-space$$', h: toggle}
   - $$mdi:apple-keyboard-option$$
-  NUMBER:
+  special:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - Ctl+T
+  - Ctl+W
+  - F19
+  - F5
+  - F17
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+HOME
+  - Sft+$$mdi:arrow-left-bold$$
+  - Sft+$$mdi:arrow-right-bold$$
+  - Sft+END
+  - Sft+Ctl+$$mdi:arrow-left-bold$$
   - {type: held}
-  - BT CLR ALL
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - Ctl+Sft+T
+  - F14
+  - $$mdi:backspace-reverse-outline$$
+  - Alt+F4
+  - F18
+  - {t: '-', s: _}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
+  - {t: Sft+-, s: Sft+_}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+HOME
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Sft+S
+  - {t: '$$mdi:transfer$$', type: trans}
   - HOME
-  - PG UP
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB OFF
-  - RGB ON
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RGB EFF
-  - RGB EFR
-  - RGB SPI
-  - RGB BRI
-  - RGB BRD
+  - PgUp
+  - PgDn
   - END
-  - PG DN
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F20
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - INS
-  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
